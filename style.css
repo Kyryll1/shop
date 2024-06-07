@@ -1,30 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .container {
     width: 1200px;
-    height: 53px;
-    margin: 0px 120px;
-    font-family: "Montserrat", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
-    width: 100%;
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 1200px;
     height: 53px;
     border-bottom: 0.3px solid grey;
-    margin-top: 30px;;
-}
-
-.shop {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.shop img {
-    display: block;
 }
 
 .nav {
-    display: inline-block;
+    display: flex;
     vertical-align: top;
     margin-left: 180px;
     margin-top: 10px;
@@ -32,21 +25,20 @@ header {
 
 .link {
     margin-right: 50px;
-    display: inline-block;
     color: black;
     font-weight: 400;
     margin-right: 50px;
 }
 
-.active {
+.link:hover {
     border-bottom: 2px solid rgba(70, 163, 88, 1);
     color: black;
     font-weight: 700;
-    margin-right: 50px;
     padding-bottom: 21px;
+    transition: 0.2s;
 }
 
-.last-link {
+.link:last-child {
     margin-right: 0px;
 }
 
@@ -63,8 +55,6 @@ header {
     background-color: rgba(245, 245, 245, 0.5);
     height: 450px;
     width: 1200px;
-    margin: 0px 120px;
-    font-family: "Montserrat", sans-serif;
     margin-top: 12px;
 }
 
@@ -92,9 +82,11 @@ header {
     height: 140px;
     width: 530px;
 }
+
 .color-text {
     color: rgba(70, 163, 88, 1);
 }
+
 .text {
     font-size: 14px;
     font-weight: 400;
@@ -107,7 +99,6 @@ header {
 .wrapper {
     font-size: 16px;
     font-weight: 700;
-    text-align: left;
     text-transform: uppercase;
     border-radius: 10px;
     background-color: rgba(70, 163, 88, 1);
@@ -117,4 +108,336 @@ header {
     text-align: center;
     margin-left: 40px;
     margin-top: 40px;
+}
+
+.main {
+    width: 1200px;
+    margin: 0px 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.box-left {
+    background-color: rgba(251, 251, 251, 1);
+    float: left;
+    clear: both;
+}
+
+.navigation {
+    margin-left: 18px;
+}
+
+.title-section1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 14px;
+}
+
+.list-wrapper {
+    padding-left: 12px;
+    margin-top: 13px;
+}
+
+.list-wrapper a {
+    margin-top: 23px;
+    font-size: 15px;
+    line-height: 40px;
+    transition: 0.2s;
+}   
+
+.list-wrapper a:hover {
+    color: rgba(70, 163, 88, 1);
+    font-weight: 700;
+}
+
+.promo {
+    width: 310px;
+    height: 470px;
+    margin-top: 375px;
+}
+
+.box-right {
+    float: left;
+    margin-left: 50px;
+}
+
+.wrapper-navigation {
+    width: 838px;
+    margin-bottom: 31px;
+}
+
+.navigation-cards a {
+    margin-right: 37px;
+}
+
+.navigation-cards a:last-child {
+    margin-right: 0;
+}
+
+.navigation-cards a:hover {
+    color: rgba(70, 163, 88, 1);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid ;
+    transition: 0.1s;
+}
+
+.navigation-cards {
+    float: left;
+}
+
+.list-short {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}   
+
+.card-section:nth-child(n+3) {
+    margin-top: 70px;
+}
+
+.cards-section1 {
+    position: relative;
+    float: left;
+    margin-right: 33px;
+}
+
+.cards-section1:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.image {
+    padding: 31px 4px;
+}
+
+.image-wrapper {
+    background-color: rgba(251, 251, 251, 1);
+    width: 258px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-cards-section1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+.price {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgba(70, 163, 88, 1);
+}
+
+.pages {
+    font-size: 0;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.pages p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid rgba(61, 61, 61, 1);
+    border-radius: 3px;
+    padding: 9px 12px;
+    margin-right: 10px;
+}
+
+.pages p:first-child {
+    background-color: rgba(70, 163, 88, 1);
+    color: white;
+}
+
+.pages p:last-child {
+    margin-right: 0;
+}
+
+.pages p:active {
+    color: white;
+    background-color: rgba(70, 163, 88, 1);
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+.card-hover {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -37px;
+    transition: 0.2s;
+}
+
+.cards-section1:hover .card-hover {
+    bottom: 7px;
+}
+
+.cards-section1::before {
+    content: "";
+    height: 2px;
+    background-color: rgba(70, 163, 88, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.cards-section1:hover::before {
+    display: block;
+}
+
+.section1 {
+    margin-top: 50px;
+}
+
+.frame {
+    display: flex;
+    position: relative;
+    top: 69px;
+    width: 586px;
+    height: 302px;
+    clear: both;
+}
+
+.frame2 {
+    width: 586px;
+    position: relative;
+    left: 611px;
+    top: 69px;
+    margin-left: 25px;
+    clear: both;
+}
+
+.summer-cactus {
+    position: absolute;
+    bottom: 0;
+    width: 586px;
+    height: 250px;
+    background-color: #FBFBFB;
+}
+
+.image-summer-cactus {
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+}
+
+.text-summer-cactus {
+    float: right;
+    text-align: right;
+    margin-top: 37px;
+    margin-right: 30px;
+    width: 270px;
+}
+
+.title-summer-cactus {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+}
+
+.text-frame {
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.find {
+    margin-top: 25px;
+    padding-right: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: #46A358;
+    padding: 11px 1px 11px 28px;
+    color: white;
+}
+
+.find img {
+    padding-right: 28px;
+}
+
+.blog-posts {
+    margin-top: 238px;
+}
+
+.title-blogs {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.subtitle-posts {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.card {
+    width: 268px;
+    margin-right: 44px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 35px;
+}
+
+.last-card {
+    margin-right: 0;
+}
+
+.data {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: #46A358;
+    margin-top: 8px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+
+.text-card {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #727272;
+}
+
+.more {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+.active {
+    color: #46A358;
 }
