@@ -161,6 +161,7 @@ header {
 .box-right {
     float: left;
     margin-left: 50px;
+    clear: both;
 }
 
 .wrapper-navigation {
@@ -198,7 +199,7 @@ header {
     content: "";
     display: block;
     clear: both;
-}   
+}  
 
 .card-section:nth-child(n+3) {
     margin-top: 70px;
