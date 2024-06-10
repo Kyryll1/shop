@@ -215,8 +215,32 @@ header {
     margin-right: 0px;
 }
 
+.cards-sale {
+    background-color: rgba(70, 163, 88, 1);
+    width: 90px;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.sale-price {
+    color: rgba(203, 203, 203, 1);
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards-sale p {
+    padding: 7px 9px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
 .image {
     padding: 31px 4px;
+    position: absolute;
 }
 
 .image-wrapper {
