@@ -334,6 +334,8 @@ header {
 }
 
 .hero {
+    margin-top: 1440px;
+    clear: both;
     display: flex;
 }
 
@@ -375,13 +377,14 @@ header {
     line-height: 24px;
 }
 
-.text {
+.text-summer-cactus p {
     font-size: 14px;
     line-height: 24px;
     color: #727272;
 }
 
-.find {
+.button-find {
+    color: white;
     margin-top: 25px;
     padding: 11px 28px;
     width: 146px;
@@ -389,12 +392,8 @@ header {
     border-radius: 4px;
 }
 
-.find a {
-    color: white;
-}
-
 .blog-posts {
-    margin-top: 238px;
+    margin-top: 138px;
 }
 
 .title-blogs {
