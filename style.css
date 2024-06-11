@@ -333,45 +333,40 @@ header {
     margin-top: 50px;
 }
 
-.frame {
+.hero {
     display: flex;
-    position: relative;
-    top: 69px;
-    width: 586px;
-    height: 302px;
-    clear: both;
 }
 
-.frame2 {
-    width: 586px;
+.frame {
     position: relative;
-    left: 611px;
-    top: 69px;
+    width: 586px;
+    height: 302px;
+}
+
+.styling-trends {
     margin-left: 25px;
-    clear: both;
+}
+
+.image-summer-cactus {
+    position: absolute;
+    mix-blend-mode: multiply;
+    width: 287px;
+    height: 292px;
+    bottom: 7px;
 }
 
 .summer-cactus {
     position: absolute;
     bottom: 0;
-    width: 586px;
     height: 250px;
+    width: 100%;
     background-color: #FBFBFB;
-}
-
-.image-summer-cactus {
-    mix-blend-mode: multiply;
-    position: absolute;
-    bottom: 10px;
-    display: flex;
+    padding-top: 37px;
+    padding-right: 30px;
 }
 
 .text-summer-cactus {
-    float: right;
     text-align: right;
-    margin-top: 37px;
-    margin-right: 30px;
-    width: 270px;
 }
 
 .title-summer-cactus {
@@ -380,25 +375,22 @@ header {
     line-height: 24px;
 }
 
-.text-frame {
-    color: #727272;
+.text {
     font-size: 14px;
     line-height: 24px;
+    color: #727272;
 }
 
 .find {
     margin-top: 25px;
-    padding-right: 28px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 4px;
+    padding: 11px 28px;
+    width: 146px;
     background-color: #46A358;
-    padding: 11px 1px 11px 28px;
-    color: white;
+    border-radius: 4px;
 }
 
-.find img {
-    padding-right: 28px;
+.find a {
+    color: white;
 }
 
 .blog-posts {
@@ -420,6 +412,7 @@ header {
 }
 
 .card {
+    background-color: #FBFBFB;
     width: 268px;
     margin-right: 44px;
 }
@@ -439,7 +432,6 @@ header {
     line-height: 16px;
     text-align: left;
     color: #46A358;
-    margin-top: 8px;
 }
 
 .card-title {
@@ -465,4 +457,9 @@ header {
 
 .active {
     color: #46A358;
+}
+
+.card-content {
+    margin-top: 8px;
+    margin-left: 15px;
 }
