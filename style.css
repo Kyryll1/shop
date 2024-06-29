@@ -43,12 +43,23 @@ header {
 }
 
 .Login {
+    display: flex;
+    justify-content: center;
     margin-left: 350px;
     width: 100px;
     height: 35px;
     background-color: rgba(70, 163, 88, 1);
     border-radius: 10px;
     color: white;
+}
+
+.Login p {
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+.Login span {
+    margin-top: 4px;
 }
 
 .wrapper-container {
@@ -195,6 +206,10 @@ header {
     float: right;
 }
 
+.list-short-button span {
+    font-size: 20px;
+}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -281,13 +296,18 @@ header {
     margin-right: 10px;
 }
 
+.pages span {
+    margin-top: 55px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid rgba(61, 61, 61, 1);
+    border-radius: 3px;
+    padding: 9px 9px;
+}
+
 .pages p:first-child {
     background-color: rgba(70, 163, 88, 1);
     color: white;
-}
-
-.pages p:last-child {
-    margin-right: 0;
 }
 
 .pages p:active {
@@ -448,10 +468,15 @@ header {
 }
 
 .more {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
-    text-align: left;
     color: #3D3D3D;
+}
+
+.more span {
+    font-size: 22px;
 }
 
 .active {
@@ -518,8 +543,9 @@ header {
     color: white;
 }
 
-.navigation-item img {
+.navigation-item span {
     margin-left: 98px;
+    font-size: 16px
 }
 
 .sub-list-colored {
